@@ -1,0 +1,35 @@
+﻿@font-face {font-family:"STARWARS";src:url("STARWARS.eot?") format("eot"),url("STARWARS.woff") format("woff"),url("STARWARS.ttf") format("truetype"),url("STARWARS.svg#STARWARS") format("svg");font-weight:normal;font-style:normal;}
+
+html {
+  position: relative;
+  min-height: 100%;
+  background: #000;
+  color:#fff;
+}
+
+h1 {
+  font-family: "STARWARS", serif;
+  text-align: center;
+}
+
+.responseImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.no {
+  color: red;
+}
+
+.yes {
+  color: green;
+}
+
+body {
+  position: fixed; /* or absolute */
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}

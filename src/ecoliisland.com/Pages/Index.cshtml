@@ -1,0 +1,24 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@Model.PageTitle</h1>
+</div>
+
+@if (Model.GithubIssues.Count > 0)
+{
+    <div class="text-center">
+        <img class="responseImage" src="https://media.giphy.com/media/nFjDu1LjEADh6/giphy.gif" />
+        <h1 class="no">Yes</h1>
+    </div>
+}
+else
+{
+    <div class="text-center">
+        <img class="responseImage" src="https://media.giphy.com/media/wYyTHMm50f4Dm/giphy.gif" />
+        <h1 class="yes">No</h1>
+    </div>
+}
